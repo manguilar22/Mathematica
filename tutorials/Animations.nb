@@ -1,0 +1,340 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13876,        332]
+NotebookOptionsPosition[     12792,        304]
+NotebookOutlinePosition[     13127,        319]
+CellTagsIndexPosition[     13084,        316]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Animations", "Title",
+ CellChangeTimes->{{3.7723664514445868`*^9, 
+  3.772366452987645*^9}},ExpressionUUID->"0a86d26a-df8d-4e5b-8020-\
+a827e6871056"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"y", " ", "+", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Theta]", " ", "*", " ", "x"}], "]"}]}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"\[Theta]", ",", "0", ",", 
+       RowBox[{"2", "*", "\[Pi]"}]}], "}"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"y", " ", ",", " ", "0", ",", "10", ",", "1"}], "}"}], " ", ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "1", ",", "10", ",", "1"}], "}"}], ",", " ", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.772366458305431*^9, 3.772366582091543*^9}, {
+  3.772366669471814*^9, 3.772366722301589*^9}, {3.772366758090671*^9, 
+  3.772366829340899*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"9e2137d4-8b71-4782-a477-1d8f66b970e1"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = 1, $CellContext`y$$ = 0, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`y$$], 0, 10, 1}, {
+      Hold[$CellContext`x$$], 1, 10, 1}}, Typeset`size$$ = {
+    360., {103., 109.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`y$8795$$ = 
+    0, $CellContext`x$8796$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`x$$ = 1, $CellContext`y$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`y$$, $CellContext`y$8795$$, 0], 
+        Hold[$CellContext`x$$, $CellContext`x$8796$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[$CellContext`y$$ + 
+        Sin[$CellContext`\[Theta] $CellContext`x$$], {$CellContext`\[Theta], 
+         0, 2 Pi}], 
+      "Specifications" :> {{$CellContext`y$$, 0, 10, 1, AnimationRunning -> 
+         False, AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}, {$CellContext`x$$, 1, 10, 1, AnimationRunning -> 
+         False, AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{407., {150., 157.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.77236646554713*^9, 3.772366502743746*^9, 3.772366582500394*^9, {
+   3.772366679924204*^9, 3.772366722845852*^9}, {3.77236677696064*^9, 
+   3.772366830181281*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"ce4b5bc5-4399-4b03-9a68-d8dbdcdf3d34"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TableForm", "[", "\[IndentingNewLine]", 
+   RowBox[{"Column", "[", " ", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<Taylor Series Expansion\>\"", ",", "Bold"}], "]"}], ",", 
+      " ", "\[IndentingNewLine]", 
+      RowBox[{"Animate", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Series", "[", 
+         RowBox[{
+          RowBox[{"Sin", "[", "x", "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "0", ",", "n"}], "}"}]}], "]"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", "1", ",", "10", ",", "1"}], "}"}], ",", 
+        RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]}], 
+     "\[IndentingNewLine]", "}"}], "]"}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.772366837025797*^9, 3.772367005553636*^9}, {
+  3.772367048937426*^9, 3.772367139058237*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"9ee0402c-ed77-48fb-afc2-2d15beb44e21"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      StyleBox["\<\"Taylor Series Expansion\"\>",
+       StripOnInput->False,
+       FontWeight->Bold]},
+     {
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`n$$ = 9, Typeset`show$$ = True, 
+         Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+         Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+         "\"untitled\"", Typeset`specs$$ = {{
+           Hold[$CellContext`n$$], 1, 10, 1}}, Typeset`size$$ = {
+         272.1375, {12.7, 24.64}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`n$12239$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, "Variables" :> {$CellContext`n$$ = 1}, 
+           "ControllerVariables" :> {
+             Hold[$CellContext`n$$, $CellContext`n$12239$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Series[
+             Sin[$CellContext`x], {$CellContext`x, 0, $CellContext`n$$}], 
+           "Specifications" :> {{$CellContext`n$$, 1, 10, 1, AnimationRunning -> 
+              False, AppearanceElements -> {
+               "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+                "DirectionButton"}}}, 
+           "Options" :> {
+            ControlType -> Animator, AppearanceElements -> None, 
+             DefaultBaseStyle -> "Animate", DefaultLabelStyle -> 
+             "AnimateLabel", SynchronousUpdating -> True, ShrinkingDelay -> 
+             10.}, "DefaultOptions" :> {}],
+          ImageSizeCache->{329., {51., 58.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Animate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]]}
+    },
+    DefaultBaseStyle->"Column",
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Column"],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.7723668556984797`*^9, 3.7723668987755404`*^9}, 
+   3.772367006648994*^9, {3.772367063620057*^9, 3.7723671039909678`*^9}, 
+   3.772367139680667*^9},
+ CellLabel->
+  "Out[27]//TableForm=",ExpressionUUID->"e2435c7e-a683-4f50-889f-\
+9c05c2c0f48f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Animate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Column", "[", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{
+         RowBox[{"\"\<Visualizing \>\"", " ", "<>", " ", 
+          RowBox[{"ToString", "@", "collisions"}], " ", "<>", " ", 
+          "\"\< Collisions\>\""}], ",", "Bold"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"ListPlot", "[", 
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{"Hash", "[", 
+             RowBox[{
+              RowBox[{"RandomPrime", "[", "1000", "]"}], ",", "a"}], "]"}], 
+            ",", 
+            RowBox[{"{", 
+             RowBox[{"e", ",", "collisions"}], "}"}]}], "]"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a", ",", "\"\<MD5\>\"", ",", "\"\<Hash Algorithm\>\""}], 
+            "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<SHA256\>\"", ",", "\"\<SHA256SHA256\>\"", ",", 
+             "\"\<Adler32\>\"", ",", "\"\<MD5\>\""}], "}"}]}], "}"}]}], 
+        "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"collisions", ",", "10", ",", "100", ",", "1"}], "}"}], ",", 
+    RowBox[{"AnimationRunning", "\[Rule]", "False"}], ",", 
+    RowBox[{"AnimationRate", "\[Rule]", ".5"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.772367626944614*^9, 3.7723678757402773`*^9}, {
+  3.772367908383246*^9, 3.772368498956785*^9}, {3.7723685292429132`*^9, 
+  3.772368678890867*^9}},
+ CellLabel->"In[68]:=",ExpressionUUID->"675b57c5-d2d8-4936-ad64-373f8f7ef9e6"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`collisions$$ = 24, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`collisions$$], 10, 100, 1}}, Typeset`size$$ = {
+    407., {158.5, 165.5}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`collisions$111294$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`collisions$$ = 10}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`collisions$$, $CellContext`collisions$111294$$, 0]},
+       "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Column[{
+         Style[
+          StringJoin["Visualizing ", 
+           ToString[$CellContext`collisions$$], " Collisions"], Bold], 
+         Manipulate[
+          ListPlot[
+           Table[
+            Hash[
+             RandomPrime[
+             1000], $CellContext`a], {$CellContext`e, \
+$CellContext`collisions$$}]], {{$CellContext`a, "MD5", "Hash Algorithm"}, {
+           "SHA256", "SHA256SHA256", "Adler32", "MD5"}}]}], 
+      "Specifications" :> {{$CellContext`collisions$$, 10, 100, 1, 
+         AnimationRunning -> False, AnimationRate -> 0.5, 
+         AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{454., {197., 204.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.772368344799899*^9, {3.7723683985300913`*^9, 3.772368417611884*^9}, {
+   3.77236844793519*^9, 3.772368499756445*^9}, {3.7723685459884043`*^9, 
+   3.77236855857066*^9}, {3.772368605349379*^9, 3.772368680990494*^9}},
+ CellLabel->"Out[68]=",ExpressionUUID->"c3df7084-5836-40f5-a545-2cdfc569c698"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"a0b1c1fd-fd1d-4601-a87d-b1f46134e7a4"]
+}, Open  ]]
+},
+WindowSize->{808, 621},
+WindowMargins->{{Automatic, 146}, {20, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 155, 3, 99, "Title",ExpressionUUID->"0a86d26a-df8d-4e5b-8020-a827e6871056"],
+Cell[CellGroupData[{
+Cell[760, 29, 883, 20, 78, "Input",ExpressionUUID->"9e2137d4-8b71-4782-a477-1d8f66b970e1"],
+Cell[1646, 51, 2619, 52, 326, "Output",ExpressionUUID->"ce4b5bc5-4399-4b03-9a68-d8dbdcdf3d34"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4302, 108, 1037, 24, 193, "Input",ExpressionUUID->"9ee0402c-ed77-48fb-afc2-2d15beb44e21"],
+Cell[5342, 134, 2773, 59, 162, "Output",ExpressionUUID->"e2435c7e-a683-4f50-889f-9c05c2c0f48f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8152, 198, 1824, 44, 216, "Input",ExpressionUUID->"675b57c5-d2d8-4936-ad64-373f8f7ef9e6"],
+Cell[9979, 244, 2701, 54, 453, "Output",ExpressionUUID->"c3df7084-5836-40f5-a545-2cdfc569c698"]
+}, Open  ]],
+Cell[12695, 301, 81, 0, 31, "Input",ExpressionUUID->"a0b1c1fd-fd1d-4601-a87d-b1f46134e7a4"]
+}, Open  ]]
+}
+]
+*)
+
